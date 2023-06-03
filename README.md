@@ -39,17 +39,17 @@
 댓글 수와 좋아요 수가 게시물 상세에서 표시가 된다.
 
 # <데이터베이스 테이블 설계>
-# User(user_email[PK], user_password, user_nickname, user_phone_number, user_address, user_profile)
+User(user_email[PK], user_password, user_nickname, user_phone_number, user_address, user_profile)
 
-# Board(board_number[PK], board_title, board_content, board_image, board_video, board_file,
-#board_wirter, board_writer_profile, board_wirte_date,
-#board_like_count, board_like_profile, board_like_nickname,
-#board_comment_writer, board_comment_profile, board_comment_write_date, board_comment, board_comment_count)
+Board(board_number[PK], board_title, board_content, board_image, board_video, board_file,
+board_wirter, board_writer_profile, board_wirte_date,
+board_like_count, board_like_profile, board_like_nickname,
+board_comment_writer, board_comment_profile, board_comment_write_date, board_comment, board_comment_count)
 
-# PopularSearch(popular_term, popular_search, count)
+PopularSearch(popular_term, popular_search, count)
 
-# User - Board 관계
-# 1. User가 Board를 작성한다.
-# 2. User가 Board에 좋아요를 누른다.
-# 3. User가 Board에 댓글을 단다.
+User - Board 관계
+1. User가 Board를 작성한다.
+2. User가 Board에 좋아요를 누른다.
+3. User가 Board에 댓글을 단다.
 
